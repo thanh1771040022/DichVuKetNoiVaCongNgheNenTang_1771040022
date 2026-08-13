@@ -62,5 +62,5 @@
 
 - [x] AI Vision mock: port 4011.
 - [x] IoT mock (provider cho consumer smoke): port 4010.
-- [ ] Core Business mock: port 4012 (chưa có - cần team-core cung cấp).
-- [ ] Camera Stream mock: port 4010 (đang dùng IoT mock thay thế - cần team-camera).
+- [x] Core Business mock: port 4012 ✅ (src/side_mocks/core_business.py, chạy `npm run serve:core-mock`)
+- [x] Camera Stream mock: port 4014 ✅ (src/side_mocks/camera_stream.py, chạy `npm run serve:camera-mock`)
