@@ -1,0 +1,142 @@
+INFO:     Started server process [25724]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8000): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [2700]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62753 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62754 - "GET /ready HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62767 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62769 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62771 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62776 - "GET /vision/detections/b4c71cec-38d8-4a8b-bd80-4ee4a082d287 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62777 - "GET /vision/results/recent?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62778 - "POST /vision/face-match HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62779 - "GET /vision/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52985 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52986 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 422 Unprocessable Entity"
+WARNING:ai_yolo:YOLO remote call failed (Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:9000/predict'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422); falling back to stub
+INFO:     127.0.0.1:52987 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52989 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52990 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:52991 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:52993 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52995 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55733 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58564 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58566 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58568 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58589 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58591 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58593 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58595 - "GET /vision/detections/38b03402-e313-45b0-9a6e-f69a45e5877a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58596 - "GET /vision/results/recent?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58597 - "POST /vision/face-match HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58598 - "GET /vision/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58600 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:58601 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 422 Unprocessable Entity"
+WARNING:ai_yolo:YOLO remote call failed (Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:9000/predict'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422); falling back to stub
+INFO:     127.0.0.1:58602 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58604 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58605 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58606 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58608 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58610 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     Started server process [27788]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51039 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51041 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51043 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51048 - "GET /vision/detections/ecd3edbc-a1c3-43e5-895e-958f9fe7293c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51049 - "GET /vision/results/recent?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51050 - "POST /vision/face-match HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51051 - "GET /vision/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51053 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51054 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:51055 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51057 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51058 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51059 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:51061 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51063 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55972 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55972 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "GET /vision/detections/aff97cb8-5237-4379-8754-6c17181857e0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "GET /vision/results/recent?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "POST /vision/face-match HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "GET /vision/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55972 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55972 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62356 - "GET /health HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET http://127.0.0.1:9000/health "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62358 - "GET /ready HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62362 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62364 - "GET /vision/detections/fc328787-bb4a-484e-bc0d-03a76340c02f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62365 - "GET /vision/results/recent?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62366 - "POST /vision/face-match HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62367 - "GET /vision/models/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62369 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62370 - "POST /vision/detect HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62371 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62372 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62374 - "GET /vision/detections/not-a-uuid HTTP/1.1" 422 Unprocessable Entity
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62375 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i; b\u1ecf qua inproc
+INFO:httpx:HTTP Request: POST http://127.0.0.1:9000/predict "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62377 - "POST /vision/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62379 - "POST /vision/detect HTTP/1.1" 422 Unprocessable Entity

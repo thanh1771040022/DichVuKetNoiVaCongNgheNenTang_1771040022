@@ -1,0 +1,11 @@
+=== Lab 05 smoke test (real services, no Docker) ===
+
+[OK] health-api                               HTTP 200
+[OK] health-yolo                              HTTP 200
+[OK] ready                                    HTTP 200 deps=sqlite=up, ai-yolo=up
+[??] detect-url                               HTTP 502
+Traceback (most recent call last):
+  File "D:\Mon_AI\SmartCampus_AI_VisionService\FIT4110_Buoi05_NoGPU\reports\evidence\smoke.py", line 69, in <module>
+    f"{BASE}/vision/detections/{LAST_ID}",
+                                ^^^^^^^
+NameError: name 'LAST_ID' is not defined

@@ -1,0 +1,1 @@
+Error response from daemon: conflict: unable to delete fit4110/ai-yolo:lab05 (must be forced) - container 446c1a7dbf49 is using its referenced image 93a6fb429c79

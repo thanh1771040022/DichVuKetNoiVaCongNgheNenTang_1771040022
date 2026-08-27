@@ -1,0 +1,175 @@
+ Image fit4110/ai-vision:lab05 Building 
+ Image fit4110/ai-yolo:lab05 Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.64kB done
+#1 DONE 0.0s
+
+#2 [ai-yolo internal] load build definition from Dockerfile.yolo
+#2 transferring dockerfile: 2.47kB done
+#2 DONE 0.0s
+
+#3 [ai-vision internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.53kB 0.0s done
+#3 DONE 0.0s
+
+#4 [ai-vision] resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#4 ...
+
+#5 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#4 [ai-vision] resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#4 DONE 1.8s
+
+#6 [ai-yolo] docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+#6 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e 0.0s done
+#6 CACHED
+
+#7 [ai-yolo internal] load build definition from Dockerfile.yolo
+#7 transferring dockerfile: 2.47kB done
+#7 DONE 0.0s
+
+#8 [ai-vision internal] load build definition from Dockerfile
+#8 transferring dockerfile: 1.53kB done
+#8 DONE 0.0s
+
+#9 [ai-vision internal] load metadata for docker.io/library/python:3.11-slim
+#9 ...
+
+#10 [auth] library/python:pull token for registry-1.docker.io
+#10 DONE 0.0s
+
+#9 [ai-vision internal] load metadata for docker.io/library/python:3.11-slim
+#9 DONE 1.5s
+
+#11 [ai-vision internal] load .dockerignore
+#11 transferring context: 255B done
+#11 DONE 0.0s
+
+#12 [ai-yolo internal] load .dockerignore
+#12 transferring context: 255B done
+#12 DONE 0.0s
+
+#13 [ai-vision internal] load build context
+#13 DONE 0.0s
+
+#14 [ai-yolo internal] load build context
+#14 DONE 0.0s
+
+#15 [ai-yolo runtime 1/6] FROM docker.io/library/python:3.11-slim@sha256:9c900dea9e8fb7e16277c179b555cc72d29a352dbc33cff48ad5a0412fd5bfc7
+#15 resolve docker.io/library/python:3.11-slim@sha256:9c900dea9e8fb7e16277c179b555cc72d29a352dbc33cff48ad5a0412fd5bfc7 0.0s done
+#15 resolve docker.io/library/python:3.11-slim@sha256:9c900dea9e8fb7e16277c179b555cc72d29a352dbc33cff48ad5a0412fd5bfc7 0.0s done
+#15 DONE 0.0s
+
+#14 [ai-yolo internal] load build context
+#14 transferring context: 11.46kB 0.0s done
+#14 DONE 0.0s
+
+#13 [ai-vision internal] load build context
+#13 transferring context: 17.96kB 0.0s done
+#13 DONE 0.0s
+
+#16 [ai-yolo runtime 3/8] RUN apt-get update     && apt-get install -y --no-install-recommends curl libgl1 libglib2.0-0     && rm -rf /var/lib/apt/lists/*     && addgroup --system appgroup     && adduser --system --ingroup appgroup --home /app appuser
+#16 CACHED
+
+#17 [ai-yolo builder 4/7] RUN python -m venv /opt/venv
+#17 CACHED
+
+#18 [ai-yolo builder 5/7] COPY requirements-yolo.txt ./requirements.txt
+#18 CACHED
+
+#19 [ai-yolo builder 6/7] RUN /opt/venv/bin/pip install --no-cache-dir --upgrade pip     && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+#19 CACHED
+
+#20 [ai-yolo builder 7/7] RUN /opt/venv/bin/python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"     && ls -la yolov8n.pt
+#20 CACHED
+
+#21 [ai-yolo runtime 4/8] COPY --from=builder /opt/venv /opt/venv
+#21 CACHED
+
+#22 [ai-yolo builder 3/7] RUN apt-get update     && apt-get install -y --no-install-recommends libgl1 libglib2.0-0     && rm -rf /var/lib/apt/lists/*
+#22 CACHED
+
+#23 [ai-yolo runtime 5/8] COPY --from=builder /build/yolov8n.pt /app/yolov8n.pt
+#23 CACHED
+
+#24 [ai-vision builder 4/5] COPY requirements.txt .
+#24 CACHED
+
+#25 [ai-vision builder 2/5] WORKDIR /build
+#25 CACHED
+
+#26 [ai-vision builder 3/5] RUN python -m venv /opt/venv
+#26 CACHED
+
+#27 [ai-vision runtime 3/6] RUN apt-get update     && apt-get install -y --no-install-recommends curl     && rm -rf /var/lib/apt/lists/*     && addgroup --system appgroup     && adduser --system --ingroup appgroup --home /app appuser
+#27 CACHED
+
+#28 [ai-vision builder 5/5] RUN /opt/venv/bin/pip install --no-cache-dir --upgrade pip     && /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+#28 CACHED
+
+#29 [ai-vision runtime 2/6] WORKDIR /app
+#29 CACHED
+
+#30 [ai-vision runtime 4/6] COPY --from=builder /opt/venv /opt/venv
+#30 CACHED
+
+#31 [ai-yolo runtime 6/8] COPY src/ai_yolo_service ./src/ai_yolo_service
+#31 DONE 0.1s
+
+#32 [ai-vision runtime 5/6] COPY src/ ./src/
+#32 DONE 0.1s
+
+#33 [ai-yolo runtime 7/8] COPY src/__init__.py ./src/__init__.py
+#33 DONE 0.1s
+
+#34 [ai-yolo runtime 8/8] RUN chown -R appuser:appgroup /app
+#34 DONE 0.4s
+
+#35 [ai-vision runtime 6/6] RUN mkdir -p /data && chown -R appuser:appgroup /app /data
+#35 DONE 0.5s
+
+#36 [ai-vision] exporting to image
+#36 exporting layers
+#36 exporting layers 0.3s done
+#36 exporting manifest sha256:21b06cb1706c0c1f8ff5b94f7d68f0e5c4d4a2e4ea08abab4067f5f40df35a0a 0.0s done
+#36 exporting config sha256:eb9a39da5ee7013ac63f57881219bb079ed57dceece98fb81f618fa647811716 0.0s done
+#36 exporting attestation manifest sha256:bf2a4ac4e9abbd3fcaccd499355328170b1b1a6f6ffe46e1f7957a817e0b6e1e 0.0s done
+#36 exporting manifest list sha256:ae9047988ff030c550021fd3f0474567653f61bb9ecf7d3119e3ef80d7c06874 0.0s done
+#36 naming to docker.io/fit4110/ai-vision:lab05 done
+#36 unpacking to docker.io/fit4110/ai-vision:lab05 0.1s done
+#36 DONE 0.5s
+
+#37 [ai-yolo] exporting to image
+#37 exporting layers 0.5s done
+#37 exporting manifest sha256:b20fff6f4c3a1f6f8ef39a39d26f94c603479a3acb077904f0740260d07faf91
+#37 exporting manifest sha256:b20fff6f4c3a1f6f8ef39a39d26f94c603479a3acb077904f0740260d07faf91 0.0s done
+#37 exporting config sha256:79626bb7230748f19b7c7f4fdf6691cf2db7a1110a3bfa1d22fc6c7e8c778c23 0.1s done
+#37 exporting attestation manifest sha256:cec3ec4f1048ef65e2b4545adad926cab1850e39c894e57d7c5906573d201e01
+#37 exporting attestation manifest sha256:cec3ec4f1048ef65e2b4545adad926cab1850e39c894e57d7c5906573d201e01 0.0s done
+#37 exporting manifest list sha256:77db224b4cef03ff6c21b956c2ff3ef3c91dac1cb0b2148658c3951e498647de 0.0s done
+#37 naming to docker.io/fit4110/ai-yolo:lab05 done
+#37 unpacking to docker.io/fit4110/ai-yolo:lab05
+#37 unpacking to docker.io/fit4110/ai-yolo:lab05 0.2s done
+#37 DONE 0.9s
+
+#38 [ai-vision] resolving provenance for metadata file
+#38 DONE 0.0s
+
+#39 [ai-yolo] resolving provenance for metadata file
+#39 DONE 0.0s
+ Image fit4110/ai-yolo:lab05 Built 
+ Image fit4110/ai-vision:lab05 Built 
+ Container fit4110-vision-db-lab05 Running 
+ Container fit4110-ai-yolo-lab05 Recreate 
+ Container fit4110-ai-yolo-lab05 Recreated 
+ Container fit4110-ai-vision-lab05 Recreate 
+ Container fit4110-ai-vision-lab05 Recreated 
+ Container fit4110-ai-yolo-lab05 Starting 
+ Container fit4110-ai-yolo-lab05 Started 
+ Container fit4110-vision-db-lab05 Waiting 
+ Container fit4110-ai-yolo-lab05 Waiting 
+ Container fit4110-vision-db-lab05 Healthy 
+ Container fit4110-ai-yolo-lab05 Healthy 
+ Container fit4110-ai-vision-lab05 Starting 
+ Container fit4110-ai-vision-lab05 Started 

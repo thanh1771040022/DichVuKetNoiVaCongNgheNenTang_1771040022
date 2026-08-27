@@ -1,0 +1,54 @@
+INFO:ai_yolo:YOLO weights yolov8n.pt kh⌠ng t\u1ed3n t\u1ea1i ù d∙ng stub
+INFO:     Started server process [3440]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53026 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57904 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57905 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61213 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53229 - "GET /json/version HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63264 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62731 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62755 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62768 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62770 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62775 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62780 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52988 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52992 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53009 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58565 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58567 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58569 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58590 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58592 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58594 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58599 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58603 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58607 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58609 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58611 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:51040 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51042 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51047 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51052 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51060 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51062 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51064 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:55973 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55975 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55976 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55977 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55975 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55975 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:62357 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62359 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62363 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62368 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62376 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62378 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62380 - "POST /predict HTTP/1.1" 422 Unprocessable Entity

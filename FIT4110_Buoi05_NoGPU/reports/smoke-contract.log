@@ -1,0 +1,24 @@
+=== Lab 05 smoke test (real services, no Docker) ===
+
+[OK] health-api                               HTTP 200
+[OK] health-yolo                              HTTP 200
+[OK] ready                                    HTTP 200 deps=sqlite=up, ai-yolo=up
+[OK] detect-url                               HTTP 200 id=3a64a322.. risk=MEDIUM dets=2
+[OK] detect-by-id                             HTTP 200
+[OK] detect-recent                            HTTP 200
+[OK] face-match                               HTTP 200
+[OK] models-info                              HTTP 200
+[OK] yolo-predict                             HTTP 200
+[OK] auth-missing                             HTTP 422
+[OK] auth-wrong                               HTTP 422
+[OK] neg-mutex                                HTTP 422
+[OK] neg-no-timestamp                         HTTP 422
+[OK] neg-bad-uuid                             HTTP 422
+[OK] bnd-thr-0.0                              HTTP 200
+[OK] bnd-thr-1.0                              HTTP 200
+[OK] bnd-thr-1.5                              HTTP 422
+[OK] yolo-mutex                               HTTP 422
+
+Evidence written to D:\Mon_AI\SmartCampus_AI_VisionService\FIT4110_Buoi05_NoGPU\reports\evidence\smoke-summary.json
+
+PASS: 18/18 expectations met
